@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --color-overlay: #3385ff;
+    
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html
+{
+    transition: 0.75s;
+}
+.showcase
+{
+    position: absolute;
+    right: 0;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+}
+.showcase header
+{
+    left: 0;
+    top: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+}
+.logo
+{
+    font-size: 50px;
+    font-weight:900 ;
+    text-transform: uppercase;
+    
+    
+}
+.toggle
+{
+  
+    width: 60px;
+    height: 60px;
+    background:url("menu3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    filter: invert(1);
+    cursor: pointer;
+}
+.text
+    {position: absolute;
+    padding: 50px 150px;
+    z-index: 2;
+    align-items: center;
+    justify-content:space-between;
+    display: inline-block;
+}
+.bigtext{
+    font-size: 60px;
+    opacity: .85;
+    font-weight: 600;
+}
+.secondtext
+{
+    font-size: 40px;
+    opacity: .85;
+    font-weight: 400;
+}
+.lasttext
+{
+    font-size: 20px;
+    opacity: .85;
+    font-weight: 200;
+}
+.explore
+{   position: absolute;
+    margin-top: 10px;
+    background: white;
+    padding: 7px;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: black;
+    transition: 0.5;
+   
+}
+.explore:hover
+{
+    letter-spacing: 6px;
+    color:var(--color-overlay);
+}
+.social img{
+    height: 40px;
+    width: 40px;
+    filter: invert(1);
+    margin-left: 10px;
+    cursor: pointer;
+}
+.social
+{   
+    position: absolute;
+    list-style: none;
+    display: inline-flex;
+    bottom: 30px;
+    left: 140px;
+}
+.social li a img
+{
+    transition: 0.5s;
+
+}
+.social li a :hover
+{
+    transform: scale(2);
+}
+.myvideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background:  #028a9c;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: overlay;
+}
+.menu 
+{   right: 0;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    width: 200px;
+    z-index: -300;
+    display:none;
+    top:100px;
+}
+.menu ul li
+{   position: relative;
+    list-style: none;
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+.menu ul li a
+{   color: #111;
+    text-decoration: none;
+    transition:0.7s ;
+}
+.menu  li a:hover
+{
+    color: var(--color-overlay);
+}
+.menu.active{
+    display: inline-block;
+}
+.showcase.active
+{
+    right: 200px;
+    
+}
+.toggle.active
+{
+    width: 60px;
+    height: 60px;
+    background:url("close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    filter: invert(1);
+    cursor: pointer;
+}
+@media(max-width:800px)
+{
+ .logo
+{
+    font-size: 40px;
+    
+}
+.toggle
+{
+    width: 50px;
+    background-size: 30px;
+}
+.bigtext{
+    font-size: 50px;
+}
+.secondtext
+{
+    font-size: 30px;
+}
+.lasttext
+{
+    font-size: 10px;
+}
+}

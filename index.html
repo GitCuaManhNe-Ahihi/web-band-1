@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="vieico.png">
+    <title>Vie Travel</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h1 class="logo">vie Travel</h1>
+            <div class="toggle"></div>
+        </header>
+        <video src="explore.mp4" class="myvideo" autoplay loop muted></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2 class="bigtext">GO! </h2>
+            <h4 class="secondtext">NEVER GIVE UP!</h4>
+            <p class="lasttext"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias. Eius mollitia voluptas quis debitis eaque voluptatibus soluta quo nemo, reprehenderit numquam cupiditate corrupti distinctio dolore cumque voluptatem hic aliquam eos. Error blanditiis perferendis, iste odit vel, similique voluptas sapiente iure, soluta mollitia quo cumque obcaecati fuga dolorem ea veniam!
+
+            </p>
+            <a href="" class="explore">EXPLORE</a>
+        </div>
+     
+        <ul class="social">
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="face.png" alt=""></a></li>
+            <li><a href="https://twitter.com/home?lang=vi"  target="_blank"><img src="twiiter.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/"  target="_blank"><img src="ins.png" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="https://travel.com.vn/">HOME</a></li>
+            <li><a href="https://dulich9.com/tong-hop-cac-dia-diem-du-lich-noi-tieng-63-tinh-thanh-viet-nam-update.html">DESTINATION</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">LOGIN</a></li>
+        </ul>
+    </div>
+    <script>
+        const toog = document.querySelector('.toggle');
+        const show = document.querySelector('.showcase');
+        const menu = document.querySelector('.menu')
+        toog.addEventListener('click',()=>{
+            toog.classList.toggle('active');
+            show.classList.toggle('active');
+            menu.classList.toggle('active')
+            
+        })
+    </script>
+</body>
+</html>
